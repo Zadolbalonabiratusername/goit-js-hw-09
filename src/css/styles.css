@@ -8,11 +8,107 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.gallery {
+  padding: 24px 156px;
+  list-style-type: none;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
+	
+	max-width: 1472px;
+	background: #fff;
+}
+
+.gallery-item {
+	overflow: hidden;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+	width: 360px;
+	height: 200px;
+	margin: 0;
+	padding:0;
+	transition: width 500ms ease-in-out, height 500ms ease-in-out;
+}
+
+.gallery-item:hover {
+	width: 376px;
+	height: 208px;
+}
+
+
+
+.feedback-form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+  gap: 16px;
+	border-radius: 8px;
+	padding: 24px;
+	width: 408px;
+	background: #fff;
+  margin: 0 auto;
+}
+
+label {
+	display: flex;
+  align-items: flex-start;
+	flex-direction: column;
+	gap: 8px;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+input {
+	padding-left: 16px;
+	background-color: transparent;
+	outline: transparent;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	width: 360px;
+	height: 40px;
+}
+
+input:hover, textarea:hover {
+  border: 1px solid #000;
+}
+
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  resize: none;
+  background-color: transparent;
+	outline: transparent;
+  padding: 8px 16px;
+}
+
+button {
+	margin-top: 8px;
+	padding: 8px 16px;
+  width: 95px;
+	height: 40px;
+	background-color: #4e75ff;
+  border: none;
+	border-radius: 8px;
+	
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+button:hover {
+  background: #6c8cff;
+}
